@@ -7,7 +7,7 @@ namespace APIM_Prototype.Controllers
 	[Authorize]
 	[ApiController]
 	[Route("[controller]")]
-	[RequiredScope(RequiredScopesConfigurationKey = "AzureAd:Scopes")]
+	//[RequiredScope(RequiredScopesConfigurationKey = "AzureAd:Scopes")]
 	public class WeatherForecastController : ControllerBase
 	{
 		private static readonly string[] Summaries = new[]
