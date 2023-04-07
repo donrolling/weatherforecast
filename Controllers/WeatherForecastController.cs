@@ -1,13 +1,12 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Identity.Web.Resource;
 
 namespace APIM_Prototype.Controllers
 {
-	[Authorize]
+	//[Authorize]
+	[Authorize(Policy = "DaemonAppRole")]
 	[ApiController]
 	[Route("[controller]")]
-	//[RequiredScope(RequiredScopesConfigurationKey = "AzureAd:Scopes")]
 	public class WeatherForecastController : ControllerBase
 	{
 		private static readonly string[] Summaries = new[]
