@@ -3,8 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace APIM_Prototype.Controllers
 {
-	//[Authorize]
-	[Authorize(Policy = "DaemonAppRole")]
+	[Authorize]
+	//[Authorize(Policy = "DaemonAppRole")]
 	[ApiController]
 	[Route("[controller]")]
 	public class WeatherForecastController : ControllerBase
